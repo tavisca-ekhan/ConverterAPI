@@ -1,8 +1,5 @@
 package com.tavisca.model;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement(name = "employee")
 public class Employee {
     public final int id;
     public final String name;

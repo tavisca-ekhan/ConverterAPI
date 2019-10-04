@@ -23,13 +23,13 @@ public class JsonConverter extends Converter {
             employeeObject.addProperty("name", employee.name);
             employeeObject.addProperty("age", employee.team);
             employeeObject.addProperty("team", employee.team);
-
             employeesJsonArr.add(employeeObject);
         }
 
         System.out.println(employeesJsonArr.toString());
         createFile(employeesJsonArr);
     }
+
 
     private void createFile(JsonArray json) {
         try (FileWriter file = new FileWriter(getLocation() + "/employees.json")) {
